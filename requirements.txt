@@ -1,0 +1,80 @@
+﻿# WARNMEW - Epidemic Early Warning System
+# Python Dependencies
+
+# ===================
+# Django & REST Framework
+# ===================
+Django==5.2.11
+djangorestframework==3.16.1
+djangorestframework-simplejwt==5.5.1
+django-cors-headers==4.9.0
+django-filter==25.2
+
+# ===================
+# Database
+# ===================
+psycopg2-binary==2.9.11
+SQLAlchemy==2.0.46
+
+# ===================
+# ML/AI
+# ===================
+torch==2.10.0
+scikit-learn==1.8.0
+optuna==4.7.0
+joblib==1.5.3
+statsmodels==0.14.6
+xgboost==3.2.0
+
+# ===================
+# Data Processing
+# ===================
+pandas==2.3.3
+numpy==2.3.3
+scipy==1.17.1
+openpyxl==3.1.5
+
+# ===================
+# PDF Processing & OCR
+# ===================
+pdfplumber==0.11.9
+pdf2image==1.17.0
+google-generativeai==0.8.6
+Pillow==12.1.1
+img2table==1.4.2
+polars==1.38.1
+opencv-contrib-python==4.13.0.92
+
+# ===================
+# Data Extraction (Weather & Trends)
+# ===================
+openmeteo_requests==1.7.5
+openmeteo_sdk==1.25.0
+pytrends==4.9.2
+requests==2.32.5
+requests-cache==1.3.0
+retry-requests==2.0.0
+lxml==6.0.2
+beautifulsoup4==4.14.3
+
+# ===================
+# Web Scraping
+# ===================
+tqdm==4.67.3
+
+# ===================
+# Utilities
+# ===================
+python-dotenv==1.2.1
+colorama==0.4.6
+colorlog==6.10.1
+PyYAML==6.0.3
+Markdown==3.10.2
+
+# ===================
+# HTTP/Networking
+# ===================
+urllib3==2.6.3
+certifi==2026.1.4
+charset-normalizer==3.4.4
+idna==3.11
