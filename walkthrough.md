@@ -731,19 +731,12 @@ OUTPUT_FOLDER.mkdir(exist_ok=True)
 OCR_LOG_FILE = SCRIPT_DIR / "ocr_files.log"
 
 # API KEYS (Round Robin)
+# NOTE: Keys are loaded from environment variables or a .env file.
+# Do NOT hardcode API keys here. See .env.example for setup instructions.
 API_KEYS = [
-    "AIzaSyDiVMJCnN8QxmeDqJzYnJk2OxGG3-H2JzQ", 
-    "AIzaSyC5uRpbw7CW_2G4zWICQo8AVmdRCqPAXSM", 
-    "AIzaSyDYh5mdkoau4_oZfQHkywtLJSQV1LTTjCs", 
-    "AIzaSyBIJMBlava6Y6yH_1C4WByyeJ6aP3ZO4-8", 
-    "AIzaSyAeRSYfhkjVrjYKzhhxNIt9_8DxrRinDoE", 
-    "AIzaSyDl6LT3FJHBLEdy5n8fueJIwV0U073uAjw", 
-    "AIzaSyCrfKOBHbdj9Ka61fF2cfuXddoW_mpYO-w", 
-    "AIzaSyAL1MMRkZUQ9sTf1-WF2FpU7hCXZsdS3jw", 
-    "AIzaSyD0osJOnR4EkEnGPj90Igg47QHsWFVw-So", 
-    "AIzaSyD3WtLpFUIkK_np7HUFvoqBvBkAgKM8EzY", 
-    "AIzaSyDjl6oJYTqtpOYKEHuZFBnrs3tKC5Cejk8",
-    "AIzaSyDuDNeO4Ah_f6tChbrw3oYT0BKZDl1nCcg"
+    # "YOUR_GOOGLE_API_KEY_1",  # Replace with real keys via environment variables
+    # "YOUR_GOOGLE_API_KEY_2",
+    # Add more keys as needed for round-robin load balancing
 ]
 
 class KeyManager:
